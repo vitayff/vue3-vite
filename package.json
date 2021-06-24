@@ -1,0 +1,28 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview --host"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "mockjs": "^1.1.0",
+    "vue": "^3.1.1",
+    "vue-router": "^4.0.9",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vicons/ionicons4": "^0.10.0",
+    "@vicons/ionicons5": "^0.10.0",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "naive-ui": "^2.13.0",
+    "sass": "^1.35.1",
+    "typescript": "^4.3.2",
+    "vfonts": "^0.1.0",
+    "vite": "^2.3.7",
+    "vite-plugin-mock": "^2.8.0",
+    "vue-tsc": "^0.0.24"
+  }
+}
