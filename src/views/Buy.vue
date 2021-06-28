@@ -2,7 +2,6 @@
   <div class="home">
     <home-header></home-header>
     <div class="home-main">
-      <transition-group enter-active-class="slideInRight">
         <ul class="goods" :key="animatedCurrentKey">
           <li v-for="item in goods" class="one-com" v-show="isCurrent(item.kind)">
             <one-commodity
@@ -18,7 +17,6 @@
         <div :key="'0' + animatedCurrentKey">
           <p class="no-more-goods">没有更多商品啦，敬请期待!!!</p>
         </div>
-      </transition-group>
     </div>
   </div>
 </template>
@@ -55,9 +53,7 @@ export default {
     OneCommodity: OneCommodity,
     HomeHeader: HomeHeader,
   },
-  //本地测试：http://localhost:8080/static/data/goods.json
-  //gitHub：/shoppingApp/static/data/github-goods.json
-  //阿里云：
+
   mounted() {
     axios.get('/api/goodd')
       .then(res => {
